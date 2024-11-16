@@ -1,0 +1,55 @@
+.header {
+    margin-top: 30px;
+
+    &__menu {
+        display: inline-flex;
+    }
+    &__button{
+        @include ChooseFontFamily('Roboto-Medium');
+        width: 155px;
+        height: 46px;
+        background-color: #dc780b;
+        border: none;
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: all .2s linear;
+        &:hover,:active {
+            color: #dc780b;
+            border: 1px solid #dc780b;
+            background-color: #fff;
+        }
+    }
+}
+
+.nav {
+    &__list {
+        padding: 0;
+        margin-left: 35px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        margin-right: 40px;
+        &:last-child {
+            margin-right: 458px;
+        }
+    }
+    &__link {
+        @include ChooseFontFamily('Roboto-Medium');
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+        color: #150c01; 
+        opacity: 0.6;
+    
+    &:hover,:active {
+        font-weight: 500;
+        font-size: 16px;
+        color: #dc780b;
+    }
+    }
+}
+

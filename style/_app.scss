@@ -1,0 +1,54 @@
+.app {
+    background-color: rgba(#FBF1E7, 0.4);
+
+    &__hightitle {
+        padding-top: 114px;
+        margin: 0;
+        margin-bottom: 5px;
+        margin-left: 98px;
+        @include ChooseFontFamily('Roboto-Medium');
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: rgba(#dc780b, 0.7);
+    }
+
+    &__title {
+        @include ChooseFontFamily('Philosopher');
+        margin: 0;
+        margin-left: 98px;
+        font-weight: 700;
+        font-size: 31px;
+        line-height: 130%;
+        color: #150c01;
+    }
+
+    &__subtitle {
+        margin: 29px 0 39px 98px;
+        @include ChooseFontFamily('Roboto-Regular');
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: rgba(#150c01, 0.7);
+    }
+    &__install {
+        padding-bottom: 129px;
+        margin-left: 98px;
+    }
+    &__apple {
+        margin-right: 30px;
+    }
+
+    &__advertisement {
+        width: 323.14px;
+        height: 651px;
+        position: absolute;
+        left: 723px;
+        top: -12.5%;
+        border-radius: 59px;
+        box-shadow:  0 5px 10px rgba(#dc780b, 0.7);
+    }
+
+}

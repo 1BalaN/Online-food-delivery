@@ -1,0 +1,53 @@
+.footer {
+    background: #252525;
+    padding-top: 137px;
+
+    &__block {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 285.5px);
+    }
+
+    &__photo {
+        margin-bottom: 25px;
+    }
+
+    &__image {
+        width: 61px;
+        height: 60px;
+    }
+
+    &__title {
+        @include ChooseFontFamily('Philosopher');
+        font-weight: 700;
+        font-size: 18px;
+        color: #fff;
+        margin-top: 0;
+        margin-bottom: 26px;
+    }
+
+    &__atr {
+        @include ChooseFontFamily('Roboto-Medium');
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(#fff, 0.7);
+
+        &:last-child {
+            margin-bottom: 104px;
+        }
+    }
+
+    
+}
+
+
+.socnet {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    
+    &__item {
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,87 @@
+.testimonial {
+
+    margin-bottom: 120px;
+
+    &__hightitle {
+        margin-bottom: 12px;
+        padding-top: 120px;
+        @include ChooseFontFamily('Roboto-Medium');
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        text-align: center;
+        color: rgba( #dc780b, 0.7);
+    }
+
+    &__title {
+        margin: 0;
+        @include ChooseFontFamily('Philosopher');
+        font-weight: 700;
+        font-size: 31px;
+        line-height: 77%;
+        color: #150c01;
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin: 0;
+        padding-top: 23px;
+        @include ChooseFontFamily('Roboto-Regular');
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: rgba( #150c01, 0.7);
+    }
+}
+
+.feedback {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 506px;
+
+    
+    &__photo {
+        margin-top: 17.77px;
+    }
+    &__text {
+        margin: 0;
+        @include ChooseFontFamily('Roboto-Regular');
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #150c01;
+
+          
+    }
+
+    &__stars {
+        margin-top: 20px;
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__name {
+        margin: 0;
+        @include ChooseFontFamily('Roboto-Regular');
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #150c01;
+    }
+
+    &__role {
+        margin: 0;
+        padding-top: 6px;
+        @include ChooseFontFamily('Roboto-Regular');
+        color: rgba(#150c01, 0.7);
+        font-weight: 400;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+}

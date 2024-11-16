@@ -1,0 +1,82 @@
+.contact {
+    background-color: rgba(#dc780b, 0.1);
+    padding-top: 115px;
+    padding-bottom: 117px;
+
+    &__hightitle {
+        margin: 0;
+        @include ChooseFontFamily('Roboto-Medium');
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        text-align: center;
+        color: rgba(#dc780b, 0.7);
+    }
+
+    &__title {
+        @include ChooseFontFamily('Philosopher');
+        font-weight: 700;
+        margin: 0;
+        padding-top: 15px;
+        font-size: 31px;
+        line-height: 130%;
+        text-align: center;
+        color: #150c01;
+    }
+
+    &__form {
+        display: block;
+        width: 750px;
+        height: 75px;
+        margin: 0 auto;
+        padding-top: 46px;
+        position: relative;
+    }
+
+    &__message {
+        width: 750px;
+        height: 75px;
+        text-indent: 32px;
+        @include ChooseFontFamily('Roboto-Regular');
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 254%;
+        color: #150c01;
+        border-radius: 10px;
+        border: none;
+        &::placeholder {
+            @include ChooseFontFamily('Roboto-Regular');
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 254%;
+            color: rgba(#150c01, 0.5);
+        }
+        &:focus {
+            outline: 2px solid #dc780b;
+        }
+    }
+
+    &__button {
+        width: 160px;
+        height: 77px;
+        border: none;
+        position: absolute;
+        left: 596px;
+        top: 46px;
+        border-radius: 10px;
+        background-color: #dc780b;
+        @include ChooseFontFamily('Roboto-Medium');
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 226%;
+        text-align: center;
+        color: #fff;
+        transition: all .2s linear;
+
+        &:hover {
+            background-color: rgba(#dc780b, 0.8);
+            font-size: 20px;
+        }
+    }
+}

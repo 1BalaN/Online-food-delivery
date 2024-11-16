@@ -1,0 +1,17 @@
+body,html {
+    font-family: 'Roboto-Regular';
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1142px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@mixin ChooseFontFamily ($font)
+{
+    font-family: $font;
+}

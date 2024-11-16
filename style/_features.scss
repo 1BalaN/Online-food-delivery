@@ -1,0 +1,76 @@
+.features {
+    &__hightitle {
+        @include ChooseFontFamily('Roboto-Medium');
+        margin: 0;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #dc780b;
+        opacity: 0.7;
+    }
+    &__title {
+        @include ChooseFontFamily('Philosopher');
+        padding-top: 7px;
+        margin: 0 auto;
+        font-weight: 700;
+        font-size: 31px;
+        text-transform: capitalize;
+        color: #150c01;
+        text-align: center;
+    }
+}
+
+.cards {
+    margin-top: 44px;
+    margin-bottom: 123px;
+    display: flex;
+    justify-content: space-between;
+    
+    &__item {
+        text-align: center;
+    }
+
+    &__photo {
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        
+        
+    }
+
+    &__title {
+        margin-top: 33px;
+        margin-bottom: 16px;
+        @include ChooseFontFamily('Philosopher');
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 96%;
+        color: #150c01;
+    }
+
+    &__text {
+        @include ChooseFontFamily('Roboto-Regular');
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #150c01;
+        opacity: 0.7;
+    }
+}
+
+#quality {
+    background-color: rgba(#8FA632, 0.1);
+}
+#delivery {
+    background-color: rgba(#E64D2E,0.08);
+}
+#taste {
+    background-color: rgba(#DC780B,0.1);
+}

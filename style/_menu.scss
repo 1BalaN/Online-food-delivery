@@ -1,0 +1,135 @@
+.menu {
+    margin-bottom: 187px;
+
+    &__hightitle {
+        margin: 0;
+        @include ChooseFontFamily('Roboto-Medium');
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #dc780b;
+        opacity: 0.7;
+    }
+    &__title {
+        margin: 0;
+        padding-top: 9px;
+        @include ChooseFontFamily('Philosopher');
+        font-weight: 700;
+        font-size: 31px;
+        line-height: 77%;
+        text-align: center;
+        color: #150c01;
+    }
+    &__subtitle {
+        margin: 0 auto;
+        padding-top: 25px;
+        max-width: 745px;
+        @include ChooseFontFamily('Roboto-Regular');
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #150c01;
+        opacity: 0.7;
+        margin-bottom: 60px;
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        width: 142px;
+        height: 42px;
+        border: 1px solid rgba(#dc780b, 0.1);
+        border-radius: 5px;
+        background-color: #fff ;
+        @include ChooseFontFamily('Roboto-Medium');
+        font-weight: 500;
+        font-size: 16px;
+        color: #dc780b;
+        transition: all .3s linear;
+
+        &:hover,:focus {
+            background-color: #dc780b;
+            color: #fff;
+        }
+    }
+}
+
+.dishes {
+    display: grid;
+    grid-template-columns: repeat(3,360px);
+    grid-template-rows: repeat(2,450px);
+    gap: 30px 30px;
+    margin-bottom: 50px;
+
+    &__item {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 75px 10px 10px 10px;
+        background-color: #fff;
+    }
+
+    &__image {
+        width: 100%;
+        border-radius: 75px 10px 75px 0;
+    }
+
+    &__subtitle {
+        margin: 0 auto;
+        max-width: 310px;
+        @include ChooseFontFamily('Roboto-Regular');
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #150c01;
+        opacity: 0.7;
+        margin-bottom: 20px;
+    }
+}
+
+.dish {
+    margin: 21px 25px;
+
+    &__name {
+        margin: 0;
+        @include ChooseFontFamily('Philosopher');
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 96%;
+        color: #150c01;
+    }
+
+    &__price {
+        margin: 0;
+        @include ChooseFontFamily('Philosopher');
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 96%;
+        color: #150c01;
+        float: right;
+    }
+}
+
+.info {
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+
+    &__button {
+        width: 36px;
+        height: 34px;
+        border: none;
+        border-radius: 5px;
+        background-color: #dc780b;
+        color: #fff;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+}
+
